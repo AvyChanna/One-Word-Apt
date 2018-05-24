@@ -1,6 +1,6 @@
-[One-Word-Apt]("https://github.com/AvyChanna/One-Word-Apt" ONE WORD APT)
+# [One-Word-Apt]("https://www.github.com/AvyChanna/One-Word-Apt")
 Bash autocomplete for install/uninstall alias for apt package manager
-### (For Easily installing/removing packages on [Debian]("https://www.debian.org/" Debian Homepage) based Linux (like [Ubuntu]("https://www.ubuntu.com" Ubuntu Homepage)) ) 
+### (For Easily installing/removing packages on [Debian]("https://www.debian.org/") based Linux (like [Ubuntu]("https://www.ubuntu.com")) ) 
 
 #### Installation
 Firstly, add alias for installing and removing packages into your *.bash_alias* file.
