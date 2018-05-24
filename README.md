@@ -1,4 +1,4 @@
-# [One-Word-Apt]("https://github.com/AvyChanna/One-Word-Apt" ONE WORD APT)
+[One-Word-Apt]("https://github.com/AvyChanna/One-Word-Apt" ONE WORD APT)
 Bash autocomplete for install/uninstall alias for apt package manager
 ### (For Easily installing/removing packages on [Debian]("https://www.debian.org/" Debian Homepage) based Linux (like [Ubuntu]("https://www.ubuntu.com" Ubuntu Homepage)) ) 
 
