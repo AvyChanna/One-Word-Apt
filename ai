@@ -2,12 +2,6 @@ _ai()
 {
 local cur prev
 _init_completion || return
-local GENERIC_APT_GET_OPTIONS='-d -m -t -u -y --allow-change-held-packages
---allow-downgrades --allow-insecure-repositories --allow-remove-essential
---allow-unauthenticated --arch-only --assume-no --assume-yes --download
---download-only --fix-missing --fix-policy --ignore-hold --ignore-missing
---install-recommends --install-suggests --only-upgrade --print-uris
---remove --show-upgraded --target-release --trivial-only --upgrade'
 
 # Complete a -t<SPACE><TAB>
 case $prev in
@@ -19,10 +13,16 @@ esac
 
 # Options for arguments
 if [[ "$cur" == -* ]]; then
-    COMPREPLY=( $( compgen -W '-s -t --auto-remove --download --dry-run
---fix-broken --fix-missing --fix-policy --force-yes --ignore-hold
---purge --reinstall --simulate --show-progress --solver --trivial-only
---target-release --verbose-versions'"$GENERIC_APT_GET_OPTIONS" -- "$cur" ) )
+    COMPREPLY=( $( compgen -W '-d -m -s -t -u -y
+--allow-change-held-packages --allow-downgrades
+--allow-insecure-repositories --allow-remove-essential
+--allow-unauthenticated --arch-only --assume-no --assume-yes
+--auto-remove --download --download-only --dry-run --fix-broken
+--fix-missing --fix-policy --force-yes --ignore-hold --ignore-missing
+--install-recommends --install-suggests --only-upgrade --print-uris
+--purge --reinstall --remove --simulate --show-progress
+--show-upgraded --solver --target-release --trivial-only
+--target-release --upgrade --verbose-versions' -- "$cur" ) )
     return 0 
 fi
 
